@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Link shortener</title>
+    <link rel="stylesheet" type="text/css" href="lib/mystyle.css">
+    <link rel="icon" href="img/link.svg" type="image/icon type">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css"/>
+	<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+    
+
+    
+
+</head>
+<body id="body">
+<div class="container-fluid">
+  <!-- Section header -->
+  
+	<div class="row">
+		<div class="col">
+			<a href="http://echolink.ml">
+                <h1 class="text-dark">Echo Link
+                    <img src="img/link.svg" alt="logo" id="my-logo">
+                    <span class="heading-slogan">Custom link shortener</span>
+                </h1>
+            </a>
+
+
+		    <nav class="navbar navbar-expand-lg nav-main">
+			     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><i class="fas fa-align-center"></i></button>
+	               <div class="collapse navbar-collapse" id="navbarSupportedContent"> 
+				     <ul class="navbar-nav ">
+						<li class="nav-item ">
+							<a class="nav-link" href="http://echolink.ml"><i class="fa fa-home" aria-hidden="true"></i> Home</a>
+						</li>
+						<li class="nav-item ">
+							<a class="nav-link" href="about.htm"><i class="fa fa-user" aria-hidden="true"></i> About</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="contact.php"><i class="fa fa-phone" aria-hidden="true"></i> Contact</a>
+						</li>				
+					</ul>
+		         </div>
+		      </nav>
+		  </div>
+    </div>
+
+   <!-- Section Intro -->
+ <div class="container-fluid">
+    <div class="row">
+    	<div class="col-lg-8">
+    		<div class="intro-wrapper">
+    			<h2 class="Intro-heading ">Create Hassle free short URLs.</h2>
+    			<p class="intro-after-heading">Hit and Run. No signup required.</p>
+                <div class="header-btn-container">
+                    <button  type="button" class="header-btn btn bg-light" id="demo">Demo</button>
+                    <button onclick="window.location.href='https://www.facebook.com/abir.sikder.18'" type="button" class="header-btn btn bg-light">Say Thanks</button>
+   			    </div>
+    		</div>
+        </div>
+    	<div class="col-lg-4">
+    		<div class="intro-wrapper box-shadow">
+    			<br><p class="intro-para">You are One click Away From Shortening your URL.</p>
+                  <form>
+                     <div class="form-group">
+                       <label for="exampleFormControlInput1" class="animate__heartBeat">Enter you Link</label>
+                       <input type="name" class="form-control" id="name" placeholder="Example: www.google.com">
+                     </div>
+                     <button type="submit" class="btn btn-primary" id="submit">Submit</button>
+                 </form>
+                    
+                <div id="result"></div>
+                <div id='spinner' style="display: none;">
+                 <img src='img/ajax-loader.gif' />
+                </div>
+                <div id="copy" ><span class="tooltipp">copied</span>copy</div>
+
+    		</div>
+    	</div>
+    </div>
+  </div>
+</div>
+
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-md-12">
+            <nav class="navbar navbar-expand-sm nav-bottom">
+                     <ul class="navbar-nav ">
+                        <li class="nav-item ">
+                            <a class="nav-link" target="_blank" href="https://github.com/abirsikder"><i class="fa fa-heart" aria-hidden="true" ></i> github</a>
+                        </li>
+                        <li class="nav-item ">
+                            <a class="nav-link" href="https://www.facebook.com/abir.sikder.18" target="_blank"><i class="fa fa-share" aria-hidden="true"></i> Follow me</a>
+                        </li>              
+                    </ul>
+              </nav>
+        </div>
+    </div>
+</div>
+<div class="container-fluid" id="video-open">
+  <div class="row" >
+    <div class="col-lg-12" id="Toggle-icon-wrapper">
+      <i class="fa fa-times close-icon" id ="close_icon" aria-hidden="true"></i>
+    </div>
+  </div>
+  <div class="row">
+     <div class="col-lg-12" id="video-wrapper">
+      <div id="video_container">
+        <iframe id="video" src="https://www.youtube.com/embed/9_iKkec6GSE" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> 
+      </div>
+    </div>
+  </div> 
+</div>
+<script type="text/javascript" src="lib/script.js"></script>
+</body>
+</html>
+
+
